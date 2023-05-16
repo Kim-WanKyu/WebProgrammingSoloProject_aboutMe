@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<title>l</title>
 	<style>
+		body {
+			background: skyblue;
+		}
+
 		footer {
 			display: inline-block;
 			height: 50px;
@@ -16,9 +20,45 @@
 			left: 0px;
 		}
 
+		header {
+			display: inline-block;
+			width: 100%;
+			background: #FFDDCC;
+			border-top: 2px solid red;
+			border-bottom: 2px solid red;
+
+			text-indent: 5%;
+			text-shadow:
+				-1px -1px 0 black,
+				1px -1px 0 black,
+			    -1px 1px 0 black,
+			    1px 1px 0 black, 
+
+				-1px 0px 0 black,
+				1px 0px 0 black,
+			    0px -1px 0 black,
+			    0px 1px 0 black, 
+
+				0px 0px 3px black,
+				0px 0px 3px black,
+				0px 0px 3px black;
+
+
+			color: #FFDDCC;
+		}
+
 		nav {
+			display: inline;
+		}
 
+		.menu {
+			display: block;
+			width: 200px;
+			font-weight: bold;
+		}
 
+		nav ul li {
+			float: left;
 		}
 		
 	</style>
@@ -32,10 +72,9 @@
 	<p>paragraph1</p>
 	<nav>
 		<ul type="none">
-			<li>1</li>
-			<li>2</li>
-			<li>3</li>
-			<li>4</li>
+			<li class="menu">1</li>
+			<li class="menu">2</li>
+			<li class="menu">3</li>
 		</ul>
 	</nav>
 	<footer>
