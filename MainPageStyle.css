@@ -1,0 +1,72 @@
+body { background: skyblue; }
+
+footer {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+	background: gray;
+	color: white;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+
+header {
+	display: inline-block;
+	width: 100%;
+
+	color: #FFDDCC;
+	text-indent: 5%;
+	text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+	    -1px 1px 0 black,
+	    1px 1px 0 black, 
+
+		-1px 0px 0 black,
+		1px 0px 0 black,
+	    0px -1px 0 black,
+	    0px 1px 0 black, 
+	    
+		0px 0px 3px black;
+
+	background: #FFDDCC;
+	border-top: 4px solid #CCAA99;
+	border-bottom: 4px solid #CCAA99;
+
+
+
+}
+
+.menu li{
+	float: left;
+	display: block;
+	width: 30%;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid black;
+	background: white;
+	margin: 2px;
+	padding: 2px;
+}
+
+.menu p{
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid black;
+	background: white;
+	margin: 2px;
+	padding: 2px;
+}
+
+nav {
+	display: inline;
+	background: gray;
+}
+
+nav ul {
+}
+
+nav ul  {
+}
