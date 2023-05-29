@@ -1,12 +1,19 @@
-body { background: skyblue; }
+body {
+	background-image: url("images/12059536_4880185.jpg");
+	background-position: center;
+	background-size: cover;
+}
 
 footer {
 	display: inline-block;
-	height: 50px;
-	line-height: 50px;
+	height: 30px;
+	line-height: 30px;
 	width: 100%;
 	background: gray;
 	color: white;
+
+	text-align: center;
+
 	position: fixed;
 	bottom: 0px;
 	left: 0px;
@@ -16,8 +23,14 @@ header {
 	display: inline-block;
 	width: 100%;
 
-	color: #FFDDCC;
 	text-indent: 5%;
+	background: #FFDDCC;
+	border-top: 4px solid #CCAA99;
+	border-bottom: 4px solid #CCAA99;
+}
+
+header h1 {
+	color: #FFDDCC;
 	text-shadow:
 		-1px -1px 0 black,
 		1px -1px 0 black,
@@ -30,13 +43,6 @@ header {
 	    0px 1px 0 black, 
 	    
 		0px 0px 3px black;
-
-	background: #FFDDCC;
-	border-top: 4px solid #CCAA99;
-	border-bottom: 4px solid #CCAA99;
-
-
-
 }
 
 .menu li{
@@ -51,22 +57,42 @@ header {
 	padding: 2px;
 }
 
-.menu p{
-	font-weight: bold;
+.menu li:hover {
+	animation-name: menuListAnimation;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes menuListAnimation {
+	to { background: black; color: white; }
+}
+
+#toMainPage {
+	float: right;
+	display: block;
 	text-align: center;
 	border: 1px solid black;
-	background: white;
 	margin: 2px;
 	padding: 2px;
 }
 
-nav {
-	display: inline;
-	background: gray;
+section {
+	display: block;
+	float: left;
+	background-color: orange;
+	width: 70%;
+	height: 70%;
+	min-height: 70%;
+	max-height: 70%;
 }
 
-nav ul {
-}
-
-nav ul  {
+aside {
+	display: block;
+	float: left;
+	background-color: red;
+	width: 30%;
+	height: 70%;
+	min-height: 70%;
+	max-height: 70%;
 }
