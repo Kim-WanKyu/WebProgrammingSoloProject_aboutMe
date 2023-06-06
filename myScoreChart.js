@@ -46,7 +46,6 @@ var scoreTotalRatio = new Array();	//전체 학점 A+,A,B+,B,C+,C,D+,D,F 비율
 var scoreMajorCount = new Array();	//전공 학점 A+,A,B+,B,C+,C,D+,D,F 개수
 var scoreMajorRatio = new Array();	//전공 학점 A+,A,B+,B,C+,C,D+,D,F 비율
 
-
 //윈도우 로딩 완료 후 초기화하는 init함수 실행되도록 window객체에 eventListener연결
 window.addEventListener('load', init);
 

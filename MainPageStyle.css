@@ -8,7 +8,7 @@ main {
 	padding-left: 50px;
 	padding-right: 50px;
 
-	animation: mainFadeInAnimation 1s 1 forwards;
+	animation: mainFadeInAnimation 3s 1 forwards;
 }
 
 @keyframes mainFadeInAnimation {
