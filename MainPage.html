@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MainPage</title>
 	<link rel="stylesheet" type="text/css"
 		href="MainPageStyle.css">
 </head>
 <body>
-	<header>
+	<header class="mainHeader">
 		<h1>어서오세요</h1>
 		<h1>김완규의 자기 소개 페이지입니다.</h1>
 	</header>
 	<nav class="menu">
 		<ul type="none">
 			<a href="AboutMePage.html"><li>본인 소개</li></a>
-			<a href="MyInterestedPage.html"><li>관심 기술 및 관련 기업</li></a>
+			<a href="MyInterestedTechPage.html"><li>관심 기술</li></a>
+			<a href="MyInterestedCompanyPage.html"><li>관련 기업</li></a>
 			<a href="FuturePlanPage.html"><li>Future Plan</li></a>
 		</ul>
 	</nav>
 	<hr style="clear: both;"> <!--float left 지우기 위한 코드-->
-	<div>
-		<p>무료 배경 이미지 출처 <a href="https://kr.freepik.com/free-vector/white-abstract-wallpaper_12059536.htm#from_view=detail_alsolike" target="_blank">Freepik</a></p>
-	</div>
+	<main>
+		<section>
+			<h3 style="background: black; color: white; text-align: center; border-radius: 20px;">저는 <em>"게임 클라이언트 프로그래머"</em> 를 꿈꾸는 김완규라고 합니다.</h3>
+			<p style="border: 2px solid black; border-radius: 50px; background: white; padding-left: 50px;">
+				제가 생각하는 게임 클라이언트 프로그래머란,<br>
+				유저가 플레이하며 직접적으로 느끼는 부분을 담당함으로써,<br>
+				유저와 가장 가까이에서 공감할 수 있는 직업이라고 생각합니다.
+			</p>
+			<dl style="background: aliceblue">
+				<dt style="background: lightskyblue;">게임 클라이언트 프로그래머란?<dt>
+				<dd style="border-left: 2px dashed lightskyblue;">사용자가 플레이하는 게임을 직접 개발하는 직업입니다.</dd>
+				<dt style="background: lightskyblue;">게임 클라이언트 프로그래머가 하는 일은?<dt>
+				<dd style="border-left: 2px dashed lightskyblue;">게임의 화면에 보이는 캐릭터, 지형, 애니메이션, 인터페이스, 사운드 등의 요소들을 사용자의 입력과 상호작용하여 직접 보고 듣고 느낄 수 있도록 구현합니다.</dd>
+				<dd style="border-left: 2px dashed lightskyblue;">다양한 그래픽 기술과 섬세한 작업을 통해 화려하며 자연스러운 그래픽과 편리한 UI/UX 등 유저의 눈에 보이는 모든 것들을 구현합니다.</dd>
+				<dt style="background: lightskyblue;">게임 클라이언트 프로그래머가 필요로 하는 지식들?<dt>
+				<dd style="border-left: 2px dashed lightskyblue;">선형대수학같은 수학적 지식과 컴퓨터구조와 자료구조, 알고리즘 등의 지식을 필요로 합니다.</dd>
+				<dd style="border-left: 2px dashed lightskyblue;">또한 직접 화면 상에 그래픽을 구현하기 때문에 컴퓨터그래픽스 기술의 지식도 필요합니다.</dd>
+			</dl>
+			<p id="imgCopyright">무료 배경 이미지 출처 <a href="https://kr.freepik.com/free-vector/white-abstract-wallpaper_12059536.htm#from_view=detail_alsolike" target="_blank">Freepik</a></p>
+		</section>
+	</main>
 	<footer>
-		WebPage is designed by Kim-WanKyu <a href="https://github.com/Kim-WanKyu/WebProgrammingSoloProject_aboutMe" target="_blank">GitHub<img  height="20px" src="images/github-mark.png"></a>
+			WebPage is designed by Kim-WanKyu <a href="https://github.com/Kim-WanKyu/WebProgrammingSoloProject_aboutMe" target="_blank">GitHub<img  height="20px" src="images/github-mark.png" alt="깃허브로고 이미지"></a>
 	</footer>
 </body>
 </html>

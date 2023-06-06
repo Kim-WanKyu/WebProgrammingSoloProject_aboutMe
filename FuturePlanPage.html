@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>FuturePlanPage</title>
+	<script>
+
+		var spanToUnreal;	//Unreal Engine 2023 교육 사이트로 이동하기 위한 span 변수
+		var spanToBaekjoon;	//baekjoon 사이트로 이동하기 위한 span 변수
+		var spanToHackers;	//해커스 영어 토익 사이트로 이동하기 위한 span 변수
+		var spanToToeic;	//토익 공식 사이트로 이동하기 위한 span 변수
+
+		//윈도우가 로드되면 각 변수의 요소 정의 및 이벤트리스너 추가하는 익명 함수 실행
+		window.onload = function() {
+			spanToUnreal = document.getElementsByName('gotoUNREALENGINE');
+			for(var i=0; i<spanToUnreal.length; i++){
+				spanToUnreal[i].addEventListener("mouseover", popupTitle(spanToUnreal[i]));
+				spanToUnreal[i].addEventListener("dblclick", openUnrealPage);				
+			}
+
+			spanToBaekjoon = document.getElementsByName('gotoBAEKJOON');
+			for(var i=0; i<spanToBaekjoon.length; i++){
+				spanToBaekjoon[i].addEventListener("mouseover", popupTitle(spanToBaekjoon[i]));
+				spanToBaekjoon[i].addEventListener("dblclick", openBaekjoonPage);
+			}
+
+			spanToHackers = document.getElementsByName('gotoHACKERS');
+			for(var i=0; i<spanToHackers.length; i++){
+				spanToHackers[i].addEventListener("mouseover", popupTitle(spanToHackers[i]));
+				spanToHackers[i].addEventListener("dblclick", openHackersPage);
+			}
+
+			spanToToeic = document.getElementsByName('goToTOEIC');
+			for(var i=0; i<spanToToeic.length; i++){
+				spanToToeic[i].addEventListener("mouseover", popupTitle(spanToToeic[i]));
+				spanToToeic[i].addEventListener("dblclick", openToeicPage);
+			}
+
+		};
+
+		//해당 태그에 title툴팁 띄워주는 함수
+		function popupTitle(span){
+			span.title = "문장을 더블클릭 시 웹페이지로 이동합니다.";
+		}
+
+		//언리얼 교육 홈페이지 창 띄우는 함수 (윈도우 고유이름은 'futurePlanWindow')
+		function openUnrealPage(){
+			window.open('https://epiclounge.co.kr/start23/index.php', 'futurePlanWindow');
+		}
+
+		//백준 온라인 저지 홈페이지 창 띄우는 함수 (윈도우 고유이름은 'futurePlanWindow')
+		function openBaekjoonPage(){
+			window.open('https://www.acmicpc.net/', 'futurePlanWindow');
+		}
+
+		//해커스 영어 토익 홈페이지 창 띄우는 함수 (윈도우 고유이름은 'futurePlanWindow')
+		function openHackersPage(){
+			window.open('https://www.hackers.co.kr/?c=s_toeic&keywd=haceng_main_gnb_toeic&logger_kw=haceng_main_gnb_toeic', 'futurePlanWindow');
+		}
+
+		//토익 공식 홈페이지 창 띄우는 함수 (윈도우 고유이름은 'futurePlanWindow')
+		function openToeicPage(){
+			window.open('https://exam.toeic.co.kr/receipt/receiptStep1.php', 'futurePlanWindow');
+		}
+
+	</script>
 	<style>
 		@import url("MainPageStyle.css");
+		@import url("FuturePlanTable.css");
 	</style>
 </head>
-<body>
-	<header>
+<body>	
+	<header class="mainHeader">
 		<nav id="toMainPage"><a href="MainPage.html">메인페이지로</a></nav>
 		<h1>Future Plan</h1>
 	</header>
@@ -16,13 +79,156 @@
 	<nav class="menu">
 		<ul type="none">
 			<a href="AboutMePage.html"><li>본인 소개</li></a>
-			<a href="MyInterestedPage.html"><li>관심 기술 및 관련 기업</li></a>
+			<a href="MyInterestedTechPage.html"><li>관심 기술</li></a>
+			<a href="MyInterestedCompanyPage.html"><li>관련 기업</li></a>
 			<a href="FuturePlanPage.html"><li>Future Plan</li></a>
 		</ul>
 	</nav>
 	<hr style="clear: both;">
+
+	<main>
+		<article>
+			<table border="1">
+				<caption style="font-size: 20px;">Future Plan</caption>
+				<thead>
+					<tr>
+						<th>학년</th><th>학기</th><th>계획</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="4">3학년</td>
+						<td>1학기</td>
+						<td>
+							<ul class="futurePlanList">
+								<li>
+									창업동아리 활동 (StrkingArts)
+								</li>
+								<li>
+									<span name="gotoBAEKJOON">백준 알고리즘 문제풀이</span>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>하계 계절학기</td>
+						<td>
+							<ul class="futurePlanList">
+								<li>
+									창업동아리 활동 (StrkingArts)
+								</li>
+								<li>
+									<span name="gotoUNREALENGINE">UNREAL ENGINE 학습해보기</span>
+								</li>
+								<li>
+									<span name="gotoBAEKJOON">백준 알고리즘 문제풀이</span>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>2학기</td>
+						<td>
+							<ul class="futurePlanList">
+								<li>
+									창업동아리 활동 (StrkingArts)
+								</li>
+								<li>
+									공모전 참여
+								</li>
+								<li>
+									<span name="gotoBAEKJOON">백준 알고리즘 문제풀이</span>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>동계 계절학기</td>
+						<td>
+							<ul class="futurePlanList">
+								<li>
+									창업동아리 활동 (StrkingArts)
+								</li>
+								<li>
+									<span name="gotoBAEKJOON">백준 알고리즘 문제풀이</span>
+								</li>
+								<li>
+									정보처리기사준비
+								</li>
+								<li>
+									<span name="gotoHACKERS">토익 공부</span>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="4">4학년</td>
+						<td>1학기</td>
+						<td>
+							<ul class="futurePlanList">
+								<li>
+									정보처리기사준비 및 시험
+								</li>
+								<li>
+									<span name="gotoBAEKJOON">백준 알고리즘 문제풀이</span>
+								</li>
+								<li>
+									<span name="gotoHACKERS">토익 공부</span>
+								</li>
+								<li>
+									<span name="goToTOEIC">토익 시험</span>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>하계 계절학기</td>
+						<td>
+							<ul class="futurePlanList">
+								<li>
+									<span name="gotoBAEKJOON">백준 알고리즘 문제풀이</span>
+								</li>
+								<li>
+									<span name="gotoHACKERS">토익 공부</span>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>2학기</td>
+						<td>
+							<ul class="futurePlanList">
+								<li>
+									<span name="gotoBAEKJOON">백준 알고리즘 문제풀이</span>
+								</li>
+								<li>
+									<span name="gotoHACKERS">토익 공부</span>
+								</li>
+								<li>
+									<span name="goToTOEIC">토익 시험</span>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>동계 계절학기</td>
+						<td>
+							<ul class="futurePlanList">
+								<li>
+									졸업 및 취업준비
+								</li>
+								<li>
+									<span name="gotoBAEKJOON">백준 알고리즘 문제풀이</span>
+								</li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+	</main>
 	<footer>
-		WebPage is designed by Kim-WanKyu <a href="https://github.com/Kim-WanKyu/WebProgrammingSoloProject_aboutMe" target="_blank">GitHub<img  height="20px" src="images/github-mark.png"></a>
+		WebPage is designed by Kim-WanKyu <a href="https://github.com/Kim-WanKyu/WebProgrammingSoloProject_aboutMe" target="_blank">GitHub<img height="20px" src="images/github-mark.png" alt="깃허브로고 이미지"></a>
 	</footer>
 </body>
 </html>

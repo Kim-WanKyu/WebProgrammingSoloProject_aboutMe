@@ -1,0 +1,50 @@
+
+canvas {
+	background-color: aliceblue;
+	border: 2px solid lightblue;
+	box-shadow: 2px 2px 2px deepskyblue;
+}
+
+canvas:hover {
+	animation: canvasAnimation 1s 1 forwards;
+}
+
+@keyframes canvasAnimation {
+	to {
+		border: 2px solid skyblue;
+		box-shadow: 3px 3px 3px deepskyblue;
+	}
+}
+
+#myScoreTable {
+	border: 2px solid deepskyblue;
+	border-collapse: collapse;
+	background: aliceblue;	
+	box-shadow: 2px 2px 2px deepskyblue;
+
+}
+
+#myScoreTable:hover {
+	animation: canvasAnimation 1s 1 forwards;
+}
+
+#myScoreTable thead {
+	background: skyblue;
+	color: white;
+	border: 2px solid deepskyblue;
+	text-align: left;
+}
+
+#myScoreTable th {
+	border: 2px solid deepskyblue;
+}
+
+#myScoreTable td {
+	border-left: 2px solid deepskyblue;
+	border-right: 2px solid deepskyblue;
+}
+
+#myScoreTable tbody tr:hover {
+	background: lightskyblue;
+	box-shadow: 0 0 3px black;
+}

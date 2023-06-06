@@ -1,25 +1,38 @@
 body {
 	background-image: url("images/12059536_4880185.jpg");
-	background-position: center;
-	background-size: cover;
+	background-size: 100%;
+}
+
+main {
+	padding-bottom: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+
+	animation: mainFadeInAnimation 1s 1 forwards;
+}
+
+@keyframes mainFadeInAnimation {
+	from { opacity: 0; }
+	to { opacity: 1; }
 }
 
 footer {
 	display: inline-block;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+
 	height: 30px;
 	line-height: 30px;
 	width: 100%;
+
 	background: gray;
 	color: white;
 
 	text-align: center;
-
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
 }
 
-header {
+.mainHeader {
 	display: inline-block;
 	width: 100%;
 
@@ -29,7 +42,7 @@ header {
 	border-bottom: 4px solid #CCAA99;
 }
 
-header h1 {
+.mainHeader h1 {
 	color: #FFDDCC;
 	text-shadow:
 		-1px -1px 0 black,
@@ -48,13 +61,14 @@ header h1 {
 .menu li{
 	float: left;
 	display: block;
-	width: 30%;
+	width: 22%;
 	font-weight: bold;
 	text-align: center;
 	border: 1px solid black;
 	background: white;
 	margin: 2px;
 	padding: 2px;
+	color: blue;
 }
 
 .menu li:hover {
@@ -71,28 +85,27 @@ header h1 {
 #toMainPage {
 	float: right;
 	display: block;
+
+	width: 120px;
+	height: 20px;
+
 	text-align: center;
 	border: 1px solid black;
+	background: white;
+
 	margin: 2px;
 	padding: 2px;
 }
 
-section {
-	display: block;
-	float: left;
-	background-color: orange;
-	width: 70%;
-	height: 70%;
-	min-height: 70%;
-	max-height: 70%;
+#toMainPage a {
+	color: blue;
+	text-decoration: none;
 }
 
-aside {
-	display: block;
-	float: left;
-	background-color: red;
-	width: 30%;
-	height: 70%;
-	min-height: 70%;
-	max-height: 70%;
+#imgCopyright {
+	position: fixed;
+
+	bottom: 20px;
+	left: 10px;
+
 }
