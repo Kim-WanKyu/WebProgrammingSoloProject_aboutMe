@@ -1,0 +1,30 @@
+table {
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+table caption { font-size: 20px; color: darkblue; }
+
+table th { min-width: 110px; background: gray; }
+table th:hover { background: lightslategray; color: white; }
+
+table td { background: aliceblue; }
+table td:hover { background: lightblue; }
+
+.tableLeftAlign {
+	padding-top: 0;
+	text-align: left;
+}
+
+.tableLeftAlign li {
+	margin-left: -30px;
+	list-style-position: inside;
+}
+
+.tableLeftAlign li:hover {
+	color: blue;
+}

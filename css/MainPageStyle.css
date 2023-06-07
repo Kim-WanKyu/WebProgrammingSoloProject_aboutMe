@@ -1,5 +1,6 @@
+
 body {
-	background-image: url("images/12059536_4880185.jpg");
+	background-image: url("../images/background1.jpg");
 	background-size: 100%;
 }
 
@@ -58,6 +59,16 @@ footer {
 		0px 0px 3px black;
 }
 
+#changeBackgroundAside {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+
+#comboBox {
+	background: #FFDDCC;
+}
+
 .menu li{
 	float: left;
 	display: block;
@@ -107,5 +118,4 @@ footer {
 
 	bottom: 20px;
 	left: 10px;
-
 }

@@ -3,12 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MainPage</title>
-	<link rel="stylesheet" type="text/css"
-		href="MainPageStyle.css">
+	<title>김완규 자기소개-메인</title>
+	<style>
+		@import url("../css/MainPageStyle.css");
+	</style>
+	<script src="../javascript/background.js"></script>
 </head>
 <body>
 	<header class="mainHeader">
+		<aside id="changeBackgroundAside">
+			<form>
+				<select id="comboBox" onchange="changeBackground(this.value)">
+					<option value="background1">배경1</option>
+					<option value="background2">배경2</option>
+					<option value="background3">배경3</option>
+				</select>
+			</form>
+		</aside>
 		<h1>어서오세요</h1>
 		<h1>김완규의 자기 소개 페이지입니다.</h1>
 	</header>
@@ -29,6 +40,8 @@
 				유저가 플레이하며 직접적으로 느끼는 부분을 담당함으로써,<br>
 				유저와 가장 가까이에서 공감할 수 있는 직업이라고 생각합니다.
 			</p>
+		</section>
+		<section>
 			<dl style="background: aliceblue">
 				<dt style="background: lightskyblue;">게임 클라이언트 프로그래머란?<dt>
 				<dd style="border-left: 2px dashed lightskyblue;">사용자가 플레이하는 게임을 직접 개발하는 직업입니다.</dd>
@@ -39,11 +52,17 @@
 				<dd style="border-left: 2px dashed lightskyblue;">선형대수학같은 수학적 지식과 컴퓨터구조와 자료구조, 알고리즘 등의 지식을 필요로 합니다.</dd>
 				<dd style="border-left: 2px dashed lightskyblue;">또한 직접 화면 상에 그래픽을 구현하기 때문에 컴퓨터그래픽스 기술의 지식도 필요합니다.</dd>
 			</dl>
-			<p id="imgCopyright">무료 배경 이미지 출처 <a href="https://kr.freepik.com/free-vector/white-abstract-wallpaper_12059536.htm#from_view=detail_alsolike" target="_blank">Freepik</a></p>
+		</section>
+		<section>
+			<p id="imgCopyright">무료 배경 이미지 출처<br>
+				1. <a href="https://kr.freepik.com/free-vector/white-abstract-wallpaper_12059536.htm#from_view=detail_alsolike" target="_blank">Freepik</a><br>
+				2. <a href="https://kr.freepik.com/free-vector/yellow-and-gray-paper-style-background-geometric-shapes_12262500.htm#&position=32&from_view=author" target="_blank">Freepik</a><br>
+				3. <a href="https://kr.freepik.com/free-vector/abstract-background-with-hexagons_15276012.htm#query=abstract-background-with-hexagons&position=1&from_view=search&track=sph" target="_blank">Freepik</a>
+			</p>
 		</section>
 	</main>
 	<footer>
-			WebPage is designed by Kim-WanKyu <a href="https://github.com/Kim-WanKyu/WebProgrammingSoloProject_aboutMe" target="_blank">GitHub<img  height="20px" src="images/github-mark.png" alt="깃허브로고 이미지"></a>
+			WebPage is designed by Kim-WanKyu <a href="https://github.com/Kim-WanKyu/WebProgrammingSoloProject_aboutMe" target="_blank">GitHub<img  height="20px" src="../images/github-mark.png" alt="깃허브로고 이미지"></a>
 	</footer>
 </body>
 </html>

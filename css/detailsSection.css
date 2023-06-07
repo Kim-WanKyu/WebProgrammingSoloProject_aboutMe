@@ -10,6 +10,7 @@ details {
 }
 
 details article {
+	background-image: url("../images/background2.jpg");
 	border: 1px solid black;
 	padding: 5px;
 }

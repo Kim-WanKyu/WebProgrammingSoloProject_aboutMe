@@ -1,0 +1,20 @@
+table th { width: 200px; height: 20px; }
+
+table td { width: 200px; height: 20px; padding-left: 15px; }
+
+.futurePlanList {
+	list-style: lower-roman;
+	margin: 1px;
+}
+
+.futurePlanList li {
+	margin-left: -25px;
+}
+
+.futurePlanList li:hover {
+	animation: futurePlanListColorAnimation 1s 1 forwards;
+}
+
+@keyframes futurePlanListColorAnimation {
+	to { color: blue; }
+}

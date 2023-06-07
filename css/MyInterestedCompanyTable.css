@@ -1,0 +1,8 @@
+table td {
+	text-align: center;
+	vertical-align:top;
+
+	padding-top: 20px;
+
+	padding-inline: 5px;
+}
