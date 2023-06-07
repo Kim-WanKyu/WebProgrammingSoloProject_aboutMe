@@ -12,16 +12,16 @@
 	<script src="../javascript/background.js"></script>
 </head>
 <body>
+	<aside id="changeBackgroundAside">
+		<form>
+			<select id="comboBox" onchange="changeBackground(this.value)">
+				<option value="background1">배경1</option>
+				<option value="background2">배경2</option>
+				<option value="background3">배경3</option>
+			</select>
+		</form>
+	</aside>
 	<header class="mainHeader">
-		<aside id="changeBackgroundAside">
-			<form>
-				<select id="comboBox" onchange="changeBackground(this.value)">
-					<option value="background1">배경1</option>
-					<option value="background2">배경2</option>
-					<option value="background3">배경3</option>
-				</select>
-			</form>
-		</aside>
 		<nav id="toMainPage"><a href="MainPage.html">메인페이지로</a></nav>
 		<h1>관련 기업</h1>
 	</header>
