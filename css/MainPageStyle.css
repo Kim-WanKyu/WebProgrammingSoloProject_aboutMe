@@ -60,7 +60,7 @@ footer {
 }
 
 #changeBackgroundAside {
-	position: fixed;
+	float: left;
 	top: 10px;
 	left: 10px;
 }
